@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Harvest</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href= "style.css" rel = "stylesheet" />
+
+</head>
+<body>
+	<h1>
+		Harvest
+    </h1>
+
+
+    <div class=project_section-desc>
+        <p>
+            Harvest, a version of the Surrealist Equisite Corpse form, consists of truncated parts of biological creatures and plants (representing those harvested by  pharmaceutical companies) as well as cultural artifacts/objects (representing the areas from which the bio-matter is harvested) which can be pieced together to form new assemblages. These assemblages can be analyzed to determine the origin of the elements, information about the bio organisms themselves (what they eat, other data), their individual compounds, their pharmaceutical use, as well as the outcome of their surrealist recipes by referring to accompanying material.
+        </p>
+      </div>
+
+
+ <div class="row">
+        <div class="first-column">
+
+            <!-- <div class="first-column" style="width: 50px; float:left; height:100px; margin:10px"> -->
+            <p>
+                Head
+            </p>
+            <p>
+                Body
+            </p>
+            <p>
+                Feet
+            </p>
+        </div>
+    
+
+        <div class="second-column">
+            <img id="head_image" class="project_image" src="conesnail2.jpg"/>   
+            <img id="body_image" class="project_image"src="Periwinkle.jpg"/>
+            <img id="feet_image" class="project_image"src="octopus_leg copy.jpg"/>
+        </div> 
+
+</div>
+
+<div class="container">
+    <!-- View chat messages here here -->
+    <div class="sub-container chat-feed">
+        <div class="chat-header">Notes</div>
+        <div class="chat-box" id="chat-box-msgs"></div>
+    </div>
+
+    <!-- Enter chat messages here -->
+    <div class="sub-container chat-input">
+        <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+        <input type="text" class="chat-input-msg" id="msg-input" placeholder="Message" />
+        <button id="send-button">Send</button>
+    </div>
+    
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="ec.js"></script>
+
+
+    <script src="ec.js">
+      </script>
+
+<!-- <script>
+    var socket = io("http://localhost:3000");
+    socket.on('connect', function() {
+      document.getElementById("button").addEventListener("click", function () {
+          socket.emit("clicked");
+      });
+
+     });
+    socket.on('clicked', function() {
+      console.log('clicked');
+      document.getElementById("alert").innerHTML = "send clicked";
+    }); -->
