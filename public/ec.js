@@ -8,13 +8,15 @@ window.addEventListener('load', function () {
   });
  
   //head
-let headImageArray=["conesnail2.jpg","scorpion-tail.jpg", "Yew-Berries.jpg"];
+let headImageArray=["Head0.jpg","Head1.jpg", "Head2.jpg", "Head3.jpg", "Head4.jpg", "Head5.jpg"];
+
+// Let Head = {"image":"text"};
 
 let currentHeadImageNum = 0;
 let headImageElement = document.getElementById("head_image");
 
 headImageElement.addEventListener("click",function(){
-  if(currentHeadImageNum ==2){
+  if(currentHeadImageNum ==4){
     currentHeadImageNum = 0;
   }
   else{
@@ -30,13 +32,13 @@ headImageElement.addEventListener("click",function(){
 })
 
 //body
-let bodyImageAray=["Periwinkle.jpg","snake1.jpg", "spider4.jpg"];
+let bodyImageAray=["Body0.jpg","Body1.jpg", "Body2.jpg", "Body3.jpg", "Body4.jpg"];
 
 let currentBodyImageNum = 0;
 let bodyImageElement = document.getElementById("body_image");
 
 bodyImageElement.addEventListener("click",function(){
-  if(currentBodyImageNum ==2){
+  if(currentBodyImageNum ==4){
     currentBodyImageNum = 0;
   }
   else{
@@ -52,13 +54,13 @@ bodyImageElement.addEventListener("click",function(){
 })
 
 //feet
-let feetImageAray=["octopus_leg copy.jpg","scorpion-tail2.jpg", "conesnail4feet.jpg"];
+let feetImageAray=["Feet0.jpg","Feet1.jpg", "Feet2.jpg", "Feet3.jpg", "Feet4.jpg"];
 
 let currentFeetImageNum = 0;
 let feetImageElement = document.getElementById("feet_image");
 
 feetImageElement.addEventListener("click",function(){
-  if(currentFeetImageNum ==2){
+  if(currentFeetImageNum ==4){
     currentFeetImageNum = 0;
   }
   else{
@@ -109,6 +111,7 @@ feetImageElement.addEventListener("click",function(){
       // socket.emit('msg', curMsg);
   });
 
+//change image
   socket.on('imageChange', function(data){
     
     if (data.section == "head"){
@@ -131,7 +134,7 @@ feetImageElement.addEventListener("click",function(){
       currentBodyImageNum = 0;
   }
   else {
-    currentFeetImageNum=currentHeadImageNum+1;
+    currentBodyImageNum=currentBodyImageNum+1;
   }
   let nextImage = bodyImageArray[currentBodyImageNum];
   bodyImageElement.src=nextImage;
@@ -144,7 +147,7 @@ if (data.section == "feet"){
       currentFeetImageNum = 0;
   }
   else {
-    currentFeetImageNum=currentHeadImageNum+1;
+    currentFeetImageNum=currentFeetImageNum+1;
   }
   let nextImage = feetImageArray[currentFeetImageNum];
   feetImageElement.src=nextImage;
