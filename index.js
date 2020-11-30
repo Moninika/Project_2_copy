@@ -40,6 +40,7 @@ socket.on('imageClick', function(data) {
     console.log(data);
      //Send a response to all other clients, not including this one
      socket.broadcast.emit('imageChange', data);
+
  });
 
     //Listen for this client to disconnect

@@ -8,9 +8,7 @@ window.addEventListener('load', function () {
   });
  
   //head
-let headImageArray=["Head0.jpg","Head1.jpg", "Head2.jpg", "Head3.jpg", "Head4.jpg", "Head5.jpg"];
-
-// Let Head = {"image":"text"};
+let headImageArray=["Head0.jpg","Head1.jpg", "Head2.jpg", "Head3.jpg", "Head4.jpg"];
 
 let currentHeadImageNum = 0;
 let headImageElement = document.getElementById("head_image");
@@ -22,9 +20,9 @@ headImageElement.addEventListener("click",function(){
   else{
     currentHeadImageNum=currentHeadImageNum+1;
   }
-  let nextImage = headImageArray[currentHeadImageNum];
-  headImageElement.src=nextImage;
-  console.log (nextImage)
+  let nextHeadImage = headImageArray[currentHeadImageNum];
+  headImageElement.src=nextHeadImage;
+  console.log (nextHeadImage)
 
   //send msg to server
   let headobj = {"section": "head"};
@@ -44,9 +42,9 @@ bodyImageElement.addEventListener("click",function(){
   else{
     currentBodyImageNum=currentBodyImageNum+1;
   }
-  let nextImage = bodyImageAray[currentBodyImageNum];
-  bodyImageElement.src=nextImage;
-  console.log (nextImage)
+  let nextBodyImage = bodyImageAray[currentBodyImageNum];
+  bodyImageElement.src=nextBodyImage;
+  console.log (nextBodyImage)
 
   //send msg to the server
   let bodyobj = {"section": "body"};
@@ -66,9 +64,9 @@ feetImageElement.addEventListener("click",function(){
   else{
     currentFeetImageNum=currentFeetImageNum+1;
   }
-  let nextImage = feetImageAray[currentFeetImageNum];
-  feetImageElement.src=nextImage;
-  console.log (nextImage)
+  let nextFeetImage = feetImageAray[currentFeetImageNum];
+  feetImageElement.src=nextFeetImage;
+  console.log (nextFeetImage)
 
   //send msg to server
   let feetobj = {"section": "feet"};
@@ -117,39 +115,39 @@ feetImageElement.addEventListener("click",function(){
     if (data.section == "head"){
       console.log("change head");
     }
-      if(currentHeadImageNum ==2){
+      if(currentHeadImageNum ==4){
         currentHeadImageNum = 0;
     }
   else {
     currentHeadImageNum=currentHeadImageNum+1;
   }
-  let nextImage = headImageArray[currentHeadImageNum];
-  headImageElement.src=nextImage;
+  let nextHeadImage = headImageArray[currentHeadImageNum];
+  headImageElement.src=nextHeadImage;
 })
    
  if (data.section == "body"){
       console.log("change body");
     }
-    if(currentBodyImageNum ==2){
+    if(currentBodyImageNum ==4){
       currentBodyImageNum = 0;
   }
   else {
     currentBodyImageNum=currentBodyImageNum+1;
   }
-  let nextImage = bodyImageArray[currentBodyImageNum];
-  bodyImageElement.src=nextImage;
+  let nextBodyImage = bodyImageArray[currentBodyImageNum];
+  bodyImageElement.src=nextBodyImage;
 })
 
 if (data.section == "feet"){
       console.log ("change feet");
     }
-    if(currentFeetImageNum ==2){
+    if(currentFeetImageNum ==4){
       currentFeetImageNum = 0;
   }
   else {
     currentFeetImageNum=currentFeetImageNum+1;
   }
-  let nextImage = feetImageArray[currentFeetImageNum];
-  feetImageElement.src=nextImage;
+  let nextFeetImage = feetImageArray[currentFeetImageNum];
+  feetImageElement.src=nextFeetImage;
 
 

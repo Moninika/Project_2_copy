@@ -6,7 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 p{
-    padding: 10px;
+    padding: 0px;
     color: black;
 }
 image{
@@ -43,18 +43,56 @@ h1 {
   }
 
 .first-column{
-width: 30%;
+width: 300px;
 padding: 0 10px 0 0;
 
 }
 
 .second-column{
-    width: 60%;
+    width: 50%;
     padding: 0 10px 0 0;
     /* float: left; */
         /* flex-direction: column;
         justify-content: space-evenly;  */
     }
+
+    /* Container holding the image and the text */
+.containerHead {
+    display:inline-block;
+
+}
+
+/* .container {
+    &__image {
+      width: 250px;
+      float: left;
+    }
+    &__text {
+      display: inline;
+    }
+  } */
+    /* Container holding the image and the text */
+/* .textChunk{
+    font-size: 20px;
+    display: block;
+    float: none;
+    clear: both;
+}
+
+.leftPic {
+    max-width: 35%;
+    max-height: 35%;
+    margin-right: 10px;
+    float: left;
+  } */
+
+/* .third-column{
+    width: 30%;
+    padding: 0 10px 0 0; */
+        /* float: left; */
+            /* flex-direction: column;
+            justify-content: space-evenly;  */
+/* } */
 
 p{
     padding: 100px;
