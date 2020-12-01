@@ -1,5 +1,5 @@
 body{
-    padding: 40px;
+    padding: 20px;
     background-image: url(backbround\ Toni\ Morrison\ copy.png);
  
     background-size: cover;
@@ -43,13 +43,13 @@ h1 {
   }
 
 .first-column{
-width: 300px;
+width: 20%;
 padding: 0 10px 0 0;
 
 }
 
 .second-column{
-    width: 50%;
+    width: 40%;
     padding: 0 10px 0 0;
     /* float: left; */
         /* flex-direction: column;
@@ -61,48 +61,21 @@ padding: 0 10px 0 0;
     display:inline-block;
 
 }
-
-/* .container {
-    &__image {
-      width: 250px;
-      float: left;
-    }
-    &__text {
-      display: inline;
-    }
-  } */
-    /* Container holding the image and the text */
-/* .textChunk{
-    font-size: 20px;
-    display: block;
-    float: none;
-    clear: both;
+.third-column{
+    width: 700px;
+    padding: 0 10px 0 0; 
 }
 
-.leftPic {
-    max-width: 35%;
-    max-height: 35%;
-    margin-right: 10px;
-    float: left;
-  } */
-
-/* .third-column{
-    width: 30%;
-    padding: 0 10px 0 0; */
-        /* float: left; */
-            /* flex-direction: column;
-            justify-content: space-evenly;  */
-/* } */
 
 p{
-    padding: 100px;
+    padding: 60px;
     color: black;
 }
 
 .project_image {
-    height: 250px;
+    height: 200px;
     display: block;
-    width:350px;
+    width:300px;
     margin:0 auto;
 }
 

@@ -35,7 +35,7 @@ io.sockets.on('connection', function(socket) {
         // socket.emit('msg', data);
     });
 
-//listen for click msg
+//listen for click msg - do I need to specify which image?
 socket.on('imageClick', function(data) { 
     console.log(data);
      //Send a response to all other clients, not including this one
