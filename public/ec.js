@@ -20,10 +20,14 @@ window.addEventListener('load', function () {
 
     "f you’ve never heard of hoodia (or hoodia gordonii as it is also known), then consider this your wake-up call. Once you learn why this organic weight loss supplement has been touted as the next miracle diet pill, you might be wondering why hoodia is not yet a part of your diet routine."
   ];
+  let headUrlArray = ["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744117/", "https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/","https://www.w3schools.com/html/html_links.asp","https://www.w3schools.com/html/html_links.asp", "https://www.w3schools.com/html/html_links.asp"
+  ]
+
   let currentHeadImageNum = 0;
   
   let headImageElement = document.getElementById("head_image");
   let headTextElement = document.getElementById("head_text");
+  let headUrlElement = document.getElementById("head_url");
 
   headImageElement.addEventListener("click", function () {
     if (currentHeadImageNum == 4) {
@@ -38,6 +42,9 @@ window.addEventListener('load', function () {
 
     let nextHeadText = headTextArray[currentHeadImageNum];
     headTextElement.innerHTML = nextHeadText;
+
+    let nextHeadUrl = headUrlArray[currentHeadImageNum];
+    headUrlElement.innerHTML = nextHeadUrl;
 
     //send msg to server
     let headobj = { "section": "head" };

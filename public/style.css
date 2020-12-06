@@ -48,7 +48,7 @@ padding: 0 10px 0 0;
 
 }
 h2{
-    padding: 80px;
+    padding: 50px;
     font-size: 18px;
     color: rgb(202, 162, 29);
 }
@@ -147,8 +147,5 @@ button{
 p{
     overflow-wrap: break-word;
 }
-@media (max-width: 800px) {
-    .sub-container {
-        width: 75%;
-    }
-}
+
+
