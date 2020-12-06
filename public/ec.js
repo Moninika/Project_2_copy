@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
 
     "f you’ve never heard of hoodia (or hoodia gordonii as it is also known), then consider this your wake-up call. Once you learn why this organic weight loss supplement has been touted as the next miracle diet pill, you might be wondering why hoodia is not yet a part of your diet routine."
   ];
-  let headUrlArray = ["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744117/", "https://www.geeksforgeeks.org/how-to-create-a-link-in-javascript/","https://www.w3schools.com/html/html_links.asp","https://www.w3schools.com/html/html_links.asp", "https://www.w3schools.com/html/html_links.asp"
+  let headUrlArray = ["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744117/", "https://www.pnas.org/content/117/19/10100","https://www.jstor.org/stable/10.26506/pharmhist.62.1-2.0003?seq=1","https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0011234", "https://researchspace.csir.co.za/dspace/handle/10204/2539"
   ]
 
   let currentHeadImageNum = 0;

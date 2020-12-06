@@ -67,7 +67,7 @@ h2{
 
 }
 .third-column{
-    width: 600px;
+    width: 500px;
     padding: 0 0px 0 0; 
     flex: none
 }
@@ -79,9 +79,9 @@ p{
 }
 
 .project_image {
-    height: 200px;
+    height: 250px;
     display: block;
-    width:300px;
+    width:330px;
     margin:0 auto;
 }
 
