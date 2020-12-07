@@ -1,7 +1,5 @@
 body{
     padding: 0px;
-    /* background-image: url(backbround\ Toni\ Morrison\ copy.png); */
- 
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
@@ -33,6 +31,14 @@ h1 {
 .project_section-desc {
     background-color: #c8eeee44;
     border-radius: 10px;
+}
+.project_samples{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: px;
+    width: 70%;
 }
 
 .row {
