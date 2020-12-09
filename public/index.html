@@ -86,7 +86,49 @@
 </div>  
         <script type="text/javascript" src="/socket.io/socket.io.js"></script>
         <script src="ec.js"></script>
-</body>
+
+<div class="save_creature">
+    <div id="photo"> 
+            <h1>Save your creature!</h1> 
+            <!-- <br><br>  -->
+            <h3> 
+                Click the button below to take a screenshot. 
+            </h3>
+            <!-- <br><br>  -->
+        
+            <!-- Define the button  
+            that will be used to  
+            take the screenshot -->
+            <button onclick="takeshot()"> 
+                Take photo 
+            </button> 
+            <canvas id="canvas" width="5" height="5"></canvas>
+            <h2>Screenshot:</h2> 
+            <div id="output"></div> 
+    </div>
+</div>
+<!-- 
+        <script type="text/javascript"> 
+
+            // Define the function  
+            // to screenshot the div 
+            function takeshot() { 
+                let div = 
+                    document.getElementById('photo'); 
+        
+                // Use the html2canvas 
+                // function to take a screenshot 
+                // and append it 
+                // to the output div 
+                html2canvas(div).then( 
+                    function (canvas) { 
+                        document 
+                        .getElementById('output') 
+                        .appendChild(canvas); 
+                }) 
+            } 
+        </script>  -->
+    </body>
 </html>
 
 

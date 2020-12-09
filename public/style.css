@@ -12,7 +12,8 @@ image{
 }
 h1 {
     color: rgb(202, 162, 29);
-   margin: 10%;
+   margin-top: 50px;
+   margin-bottom: 40px;
    background-color: #c8eeee44;
    border-radius: 10px;
    font-weight: 500;
@@ -31,6 +32,7 @@ h1 {
 .project_section-desc {
     background-color: #c8eeee44;
     border-radius: 10px;
+    margin: 20px;
 }
 .project_samples{
     display: block;
@@ -63,6 +65,12 @@ padding: 0 10px 0 0;
 h2{
     padding: 40px;
     font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(202, 162, 29);
+}
+
+h3{
+    font-size: 16px;
     color: rgb(202, 162, 29);
 }
 
@@ -84,7 +92,6 @@ h2{
     padding: 0 0px 0 0; 
     flex: none
 }
-
 
 p{
     padding: 30px;
@@ -146,6 +153,7 @@ button{
 }
 .chat-header{
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
     text-align: center;
     color: rgb(202, 162, 29);
@@ -161,4 +169,13 @@ p{
     overflow-wrap: break-word;
 }
 
+.save_creature {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(202, 162, 29);
+}
+
+.photo {
+
+}
 
