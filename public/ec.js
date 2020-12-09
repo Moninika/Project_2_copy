@@ -44,8 +44,10 @@ window.addEventListener('load', function () {
     headTextElement.innerHTML = nextHeadText;
 
     let nextHeadUrl = headUrlArray[currentHeadImageNum];
-    headUrlElement.innerHTML = nextHeadUrl;
-
+    headUrlElement.setAttribute('href', nextHeadUrl);
+        // headUrlElement.href = nextHeadUrl;
+    // headUrlElement.innerHTML = "Click to read more";
+   
     //send msg to server
     let headobj = { "section": "head" };
     socket.emit("imageClick", headobj);
@@ -64,10 +66,15 @@ window.addEventListener('load', function () {
 
     "Hoodia Gordoni is a cactus-like succulent plant, native to the Kalahari Desert in southern Africa. Due to over harvesting by pharmaceutical companies and slow growth, Hoodia is now considered an endangered species. Hoodia grows in clumps of upright stems with tan flowers and thorns, and a strong, unpleasant odor."
   ];
+
+
+  let bodyUrlArray = ["https://www.sciencedaily.com/releases/2018/05/180503142809.htm","https://www.bbcearth.com/blog/?article=how-venoms-are-shaping-medical-advances"]
+
   let currentBodyImageNum = 0;
 
   let bodyImageElement = document.getElementById("body_image");
   let bodyTextElement = document.getElementById("body_text");
+  let bodyUrlElement = document.getElementById("body_url");
 
   bodyImageElement.addEventListener("click", function () {
     if (currentBodyImageNum == 4) {
@@ -82,6 +89,9 @@ window.addEventListener('load', function () {
 
     let nextBodyText = bodyTextArray[currentBodyImageNum];
    bodyTextElement.innerHTML = nextBodyText;
+
+   let nextBodyUrl = bodyUrlArray[currentBodyImageNum];
+   bodyUrlElement.setAttribute('href', nextBodyUrl);
 
     //send msg to the server
     let bodyobj = { "section": "body" };
@@ -105,6 +115,7 @@ window.addEventListener('load', function () {
 
   let feetImageElement = document.getElementById("feet_image");
   let feetTextElement = document.getElementById("feet_text");
+  let feetUrlElement = document.getElementById("feet_url");
 
   feetImageElement.addEventListener("click", function () {
     if (currentFeetImageNum == 4) {

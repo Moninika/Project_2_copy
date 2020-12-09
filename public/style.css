@@ -41,6 +41,13 @@ h1 {
     width: 70%;
 }
 
+.project_url{
+    display: left;
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+} 
+
 .row {
     display: flex;
     padding-top: 20px;
@@ -54,7 +61,7 @@ padding: 0 10px 0 0;
 
 }
 h2{
-    padding: 50px;
+    padding: 40px;
     font-size: 18px;
     color: rgb(202, 162, 29);
 }
@@ -73,14 +80,14 @@ h2{
 
 }
 .third-column{
-    width: 500px;
+    width: 600px;
     padding: 0 0px 0 0; 
     flex: none
 }
 
 
 p{
-    padding: 40px;
+    padding: 30px;
     color: black;
 }
 
