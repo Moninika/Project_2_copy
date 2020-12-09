@@ -222,13 +222,13 @@ window.addEventListener('load', function () {
       let nextFeetText = feetTextArray[currentFeetImageNum];
       feetTextElement.innerHTML = nextFeetText;
     }
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.body.appendChild(canvas)
+  //   html2canvas(document.querySelector("#capture")).then(canvas => {
+  //     document.body.appendChild(canvas)
   
-  let canvas = document.getElementById('canvas');
-  let dataURL = canvas.toDataURL();
-  console.log(dataURL);
-  });
+  // let canvas = document.getElementById('canvas');
+  // let dataURL = canvas.toDataURL();
+  // console.log(dataURL);
+  // });
   
   });
 })
