@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Harvest</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href= "style.css" rel = "stylesheet" />
+
+</head>
+<body>
+    <div>
+        <img id="samples" class="project_samples" src="year10.jpg"/>
+    </div>
+
+    <div class=project_section-desc>
+        <p>
+            How is (racial) identity both shaped and perceived by the categorizations, hierarchies, and absences included/not included on the US census? 
+        </p>
+
+        <p>
+            What motivations are inherent in these institutionalized choices and by whom (who are the stakeholders)? 
+        </p>
+
+        <p>
+            How does this particular form relate to notions of belonging?
+        </p>
+
+        <p>
+            How does racism/bias and the US census reinforce one-another?
+        </p>
+
+        <p>
+
+            From the first US census in 1790 until 1960, people could not select their own race. The census takers, or enumerators, determined your race through their estimations based on the input of the head of household.  It was not until 2000 that US citizens could choose more than one race to describe themselves, allowing for an estimate of the nation’s multiracial population. In 2020, for the first time, the form asks respondents who choose white or black for their race to give more information about their origins – for example, German, Lebanese, African American or Somali.
+ 
+            <a target="_blank" href="https://www.census.gov/library/visualizations/2019/comm/timeline-census-history.html">Complete US Census Timeline</a>
+        </p>
+
+        <p>
+            <a target="_blank" href="https://www.theworldweekly.com/reader/view/2464/biopiracy-when-corporations-steal-indigenous-practices-and-patent-them-for-profit">Participate in the Alternative 2021 Census</a>
+        </p>
+
+      </div>
+
+ <div class="row">
+        <!-- <div class="first-column">
+
+            <h2>
+                Head
+            </h2>
+            <h2>
+                Body
+            </h2>
+            <h2>
+                Feet
+            </h2>
+        </div>
+     -->
+
+        <div class="second-column">
+            <img id="head_image" class="project_image" src="Head0.jpg"/>   
+            <img id="body_image" class="project_image"src="Body0.jpg"/>
+            <img id="feet_image" class="project_image"src="Feet0.jpg"/>
+        </div> 
+
+        <div class="third-column">
+            <p id="head_text"> Conotoxins are bioactive peptides found in the venom that marine cone snails produce for prey capture and defense. They are used as pharmacological tools to study pain signalling and have the potential to become a new class of analgesics. To date, more than 10,000 conotoxin sequences have been discovered.
+            </p>
+            <a id="head_url" class="project_url" target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5744117/">Click here to read more</a>
+            
+
+            <p id="body_text"> The Rosy Periwinkle plant from Madagascar gives us two very important cancer-fighting medicines: vinblastine and vincristine. Vincristine has helped increase the chance of surviving childhood leukaemia from 10% to 90%, while vinblastine is used to treat Hodgkins' Disease.
+            </p> 
+            <a id="body_url" class="project_url" target="_blank" href="https://www.sciencedaily.com/releases/2018/05/180503142809.htm">Click here to read more</a>
+                
+
+            <p id="feet_text"> The current review comprehensively summarized the nutritional qualities, functional food attributes, and bioactive properties of these organisms. Among the phylum mollusca, Cephalopoda, Bivalvia, and Gastropoda were mostly reported for their nutraceutical applications and bioactive properties.  
+            </p>
+            <a id="feet_url" class="project_url" target="_blank" href="https://ucmp.berkeley.edu/taxa/inverts/mollusca/cephalopoda.php">Click here to read more</a>
+            
+        </div> 
+</div>
+
+<div class="container">
+    <!-- View chat messages here here -->
+    <div class="sub-container chat-feed">
+        <div class="chat-header"> Name your creature. What can it do? Cure cancer? Erradicate all plastic pollution? Destroy the environment? Exhibit magical properties?</div>
+        <div class="chat-box" id="chat-box-msgs"></div>
+    </div>
+
+    <!-- Enter chat messages here -->
+    <div class="sub-container chat-input">
+        <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+        <input type="text" class="chat-input-msg" id="msg-input" placeholder="Share your thoughts" />
+        <button id="send-button">Send</button>
+    </div>
+</div>  
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="ec.js"></script>
+
+<div class="save_creature">
+    <div id="photo"> 
+            <h1>Save your creature!</h1> 
+            <!-- <br><br>  -->
+            <h3> 
+                Click the button below to take a screenshot. 
+            </h3>
+            <!-- <br><br>  -->
+        
+            <!-- Define the button  
+            that will be used to  
+            take the screenshot -->
+            <button onclick="takeshot()"> 
+                Take photo 
+            </button> 
+            <canvas id="canvas" width="5" height="5"></canvas>
+            <h2>Screenshot:</h2> 
+            <div id="output"></div> 
+    </div>
+</div>
+<!-- 
+        <script type="text/javascript"> 
+
+            // Define the function  
+            // to screenshot the div 
+            function takeshot() { 
+                let div = 
+                    document.getElementById('photo'); 
+        
+                // Use the html2canvas 
+                // function to take a screenshot 
+                // and append it 
+                // to the output div 
+                html2canvas(div).then( 
+                    function (canvas) { 
+                        document 
+                        .getElementById('output') 
+                        .appendChild(canvas); 
+                }) 
+            } 
+        </script>  -->
+    </body>
+</html>
+
+

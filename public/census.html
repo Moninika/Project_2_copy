@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Harvest</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href= "style.css" rel = "stylesheet" />
+
+</head>
+<body>
+	<h1>
+		Participate in the Alternative Census
+    </h1>
+    <h4>
+		About    Census    Timeline    Archive    Contact
+    </h4>
+
+    <div class=project_section-desc>
+        <p>
+            What country do you consider home? You may choose more than one. 
+        </p>
+        <p>
+            From the first US census in 1790 until 1960, people could not select their own race. The census takers, or enumerators, determined your race through their estimations based on the input of the head of household.  It was not until 2000 that US citizens could choose more than one race to describe themselves, allowing for an estimate of the nation’s multiracial population. In 2020, for the first time, the form asks respondents who choose white or black for their race to give more information about their origins – for example, German, Lebanese, African American or Somali.
+
+        </p>
+
+        <p>
+            How would you describe your origins, using as many words as desired, several linked words, or one compound word of your making? Examples: "Chinese-Swiss-Cuban-American" or Latinx + Asian = "Latasian". 
+        </p>
+        <p>
+            You are welcome to describe further such as : "White-Irish-German-American-Texan-Austinite-HillCountryAdjacent-Wandering (Writing this, I am thinking about how bizarre it is to trace my ancestry to European roots when I have no existing familial connections there. It feels like something I have been conditioned to do.)
+        </p>        
+      </div>
+
+ 
+
+<div class="container">
+    <!-- View chat messages here here -->
+    <div class="sub-container chat-feed">
+        <h5>
+            Create your own identity category (using as many words as desired, several linked words, or one compound word of your making) and describe your origins/origin story.
+        </h5>
+        <div class="chat-box" id="chat-box-msgs"></div>
+    </div>
+
+    <!-- Enter chat messages here -->
+    <div class="sub-container chat-input">
+        <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+        <input type="text" class="chat-input-msg" id="msg-input" placeholder="Share your thoughts" />
+        <button id="send-button">Send</button>
+    </div>
+</div>  
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="ec.js"></script>
+
+<div class="save_answer">
+    <div id="census_note"> 
+            <h5>By hitting "send" you are adding your answer to our growing archive
+            </h5> 
+            <!-- <br><br>  -->
+            <h4>
+                <a target="_blank" href="./archive.html">Click here to explore the archive </a>
+            </h4>
+ 
+            <div id="output"></div> 
+    </div>
+</div>
+
+    </body>
+</html>
