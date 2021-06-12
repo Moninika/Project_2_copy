@@ -22,7 +22,17 @@ h1 {
    font-weight: 500;
    text-align: center;
 }
+h2{
+    padding: 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
 
+h3{
+    font-size: 14px;
+    color: black;
+}
 h4 {
     color: rgb(63, 119, 141);
    margin-top: 10px;
@@ -40,6 +50,17 @@ h5 {
    background-color: #ddf4f7da;
    border-radius:2px;
    font-size: 16px;
+   font-weight: 500;
+   text-align: center;
+}
+
+h6 {
+    color: rgb(239, 246, 248);
+   margin-left: 10%;
+   margin-bottom: 10px;
+   margin-top: 60px;
+   border-radius:2px;
+   font-size: 20px;
    font-weight: 500;
    text-align: center;
 }
@@ -77,9 +98,7 @@ h5 {
 
 .project_samples{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
     margin-top: 10px;
     margin-left: 30px;
     margin-right: 30px;
@@ -110,30 +129,18 @@ h5 {
   }
 .row {
     display: flex;
-    padding-top: 20px;
+    padding-top: 10px;
     /* flex-direction: column;
     justify-content: space-evenly;  */
   }
 
 .first-column{
-width: 20%;
-padding: 0 10px 0 0;
-
-}
-h2{
-    padding: 40px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: black;
-}
-
-h3{
-    font-size: 14px;
-    color: black;
+width: 10%;
+padding:0 0 0 0;
 }
 
 .second-column{
-    width: 40%;
+    width: 90%;
     padding: 0 10px 0 0;
     /* float: left; */
         /* flex-direction: column;
