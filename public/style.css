@@ -8,6 +8,7 @@ body{
 p{
     padding: 0px;
     color: black;
+    font-size: 14px;
 }
 image{
     padding: 0px;
@@ -35,7 +36,7 @@ h3{
 }
 h4 {
     color: rgb(63, 119, 141);
-   margin-top: 10px;
+   margin-top: 20px;
    margin-bottom: 10px;
    background-color: #ddf4f7da;
    border-radius:2px;
@@ -124,14 +125,16 @@ h6 {
     padding-bottom: 20px;
 
 }  
-  .box {
+.box {
     float: left;
     width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
     padding: 50px; /* if you want space between the images */
   }
+  
 .row {
     display: flex;
     padding-top: 10px;
+    /* text-align: center; */
     /* flex-direction: column;
     justify-content: space-evenly;  */
   }
@@ -139,6 +142,7 @@ h6 {
 .first-column{
 width: 10%;
 padding:0 0 0 0;
+background-color: #ddf4f7da;
 }
 
 .second-column{
@@ -152,13 +156,53 @@ padding:0 0 0 0;
     /* Container holding the image and the text */
 .containerHead {
     display:inline-block;
+}
 
-}
+.box_2 {
+    float: left;
+    width: 20%; /* three boxes (use 25% for four, and 50% for two, etc) */
+    /* padding: 50px; if you want space between the images */
+  }
+.row_2 {
+    display: flex;
+    padding-top: 0;
+    /* flex-direction: column;
+    justify-content: space-evenly;  */
+  }
+
 .third-column{
-    width: 600px;
-    padding: 0 0px 0 0; 
-    flex: none
+width: 20%;
+padding:0 0 0 0;
 }
+
+.fourth-column{
+    width: 20%;
+    padding: 0 0 0 0;
+    /* float: left; */
+        /* flex-direction: column;
+        justify-content: space-evenly;  */
+    }
+    .fifth-column{
+        width: 20%;
+        padding: 0 0 0 0;
+        /* float: left; */
+            /* flex-direction: column;
+            justify-content: space-evenly;  */
+    }
+    .sixth-column{
+        width: 20%;
+        padding: 0 0 0 0;
+        /* float: left; */
+            /* flex-direction: column;
+            justify-content: space-evenly;  */
+    }
+    .seventh-column{
+        width: 20%;
+        padding: 0 0 0 0;
+        /* float: left; */
+            /* flex-direction: column;
+            justify-content: space-evenly;  */
+    }
 
 p{
     padding: 10px;
