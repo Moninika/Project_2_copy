@@ -10,6 +10,7 @@ p{
     font-size: 14px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: left;
 }
 image{
     padding: 0px;
@@ -48,8 +49,7 @@ h4 {
 
 h5 {
     color: rgb(63, 119, 141);
-   margin-top: 30px;
-   margin-bottom: 30px;
+   padding: 20px;
    background-color: #ddf4f7da;
    border-radius:2px;
    font-size: 16px;
