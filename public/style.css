@@ -285,7 +285,7 @@ p{
     resize: vertical;
 } */
 
-input_search{
+.input_search{
     flex-direction: row;
     align-items: left;
     overflow-wrap: break-word;
