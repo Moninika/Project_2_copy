@@ -22,6 +22,19 @@ p1{
     text-align: center;
 } 
 
+p2{
+    background-color: #e3f39e;
+    color: black;
+    margin-top:30px;
+    padding:20px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius:2px;
+    border: 1px solid  rgb(63, 119, 141);
+} 
+
 image{
     padding: 0px;
 }
@@ -351,9 +364,9 @@ p{
         background-repeat: no-repeat;
         width: 100%;
         font-size: 16px;
-        padding: 12px 20px 12px 40px;
+        padding: 20px 20px 12px 40px;
         border: 1px solid #ddd;
-        margin-bottom: 12px;
+        margin-left: 20%;
       }
       
       #myUL {
@@ -365,7 +378,7 @@ p{
       #myUL li a {
         border: 1px solid #ddd;
         margin-top: -1px; /* Prevent double borders */
-        background-color: #f6f6f6;
+        background-color: #ddf4f7da;
         padding: 12px;
         text-decoration: none;
         font-size: 18px;
@@ -374,5 +387,5 @@ p{
       }
       
       #myUL li a:hover:not(.header) {
-        background-color: #eee;
+        background-color: #f3fa92da;
       }
